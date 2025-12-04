@@ -46,7 +46,7 @@ public class SelenideTest {
         $("[data-test-id=notification]")
                 .shouldBe(visible, Duration.ofSeconds(15))
                 .should(Condition.text("Успешно"))
-                .should(Condition.text(planingDate));
+                .should(Condition.text("Встреча успешно забронирована на " + planingDate));
 
     }
 }
